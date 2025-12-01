@@ -10,7 +10,7 @@ import { AppService } from './app.service';
     UsersModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
-      url: process.env.DATABASE_URL,
+      url: process.env.DATABASE_URL || "postgresql://test_bcsr_user:rfWk4PnQAYZLQ5WsSA6Pzn2xwfO0lD2w@dpg-d4c9q2ggjchc73d8rdfg-a.oregon-postgres.render.com/test_bcsr",
       entities: [User],
       synchronize: true, 
       ssl: { rejectUnauthorized: false }, 
