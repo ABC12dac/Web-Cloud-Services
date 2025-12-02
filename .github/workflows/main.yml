@@ -59,3 +59,4 @@ jobs:
         run: |
           echo "Deploying Render service with image $IMAGE_NAME"
           render deploys create ${{ secrets.RENDER_SERVICE_ID }} --image $IMAGE_NAME --output json --confirm
+          
